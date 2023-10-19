@@ -3,7 +3,7 @@ import { Figtree } from "next/font/google";
 import "./globals.css";
 import SideBar from "@/components/SideBar";
 import SupabaseProvider from "@/providers/SupabaseProvider";
-import UserProvider from "@/hooks/userProvider";
+import UserProvider from "@/providers/userProvider";
 
 const font = Figtree({ subsets: ["latin"] });
 
