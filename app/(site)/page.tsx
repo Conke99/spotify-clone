@@ -1,8 +1,14 @@
+import getSongs from "@/actions/getSongs";
 import Header from "@/components/Header";
+import PageContect from "./components/PageContect";
 
 import ListItem from "@/components/ListItem";
 
-export default function Home() {
+export const revalidate = 0;
+
+export default async function Home() {
+  const songs = await getSongs();
+
   return (
     <div
       className="bg-neutral-900 
@@ -42,7 +48,7 @@ export default function Home() {
         <div className="flex justify-between items-center">
           <h1 className="text-white text-2xl font-semibold">Newest songs</h1>
         </div>
-        <div>List of Songs!</div>
+        <PageContect songs={songs} />
       </div>
     </div>
   );
