@@ -5,6 +5,7 @@ import { Song } from "@/types";
 import { BsPauseFill, BsPlayFill } from "react-icons/bs";
 import { AiFillStepBackward, AiFillStepForward } from "react-icons/ai";
 import { HiSpeakerWave, HiSpeakerXMark } from "react-icons/hi2";
+// @ts-ignore
 import useSound from "use-sound";
 
 import usePlayer from "@/hooks/usePlayer";
