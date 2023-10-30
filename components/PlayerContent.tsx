@@ -75,7 +75,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
       sound?.unload();
     };
   }, [sound]);
-
+  console.log(isPlaying, "EE");
   const handlePlay = () => {
     if (!isPlaying) {
       play();
